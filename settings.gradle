@@ -1,0 +1,3 @@
+rootProject.name='Essentitools Examples'
+include ':app'
+include ':essentitools'
