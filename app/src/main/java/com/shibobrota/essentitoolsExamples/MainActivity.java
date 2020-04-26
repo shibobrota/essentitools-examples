@@ -19,5 +19,12 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             android.util.Log.e("PACKAGE_NAME_EXCEPTION", "onCreate: " + e.getMessage());
         }
+
+        try {
+            Tools.builder builder = new Tools.builder(getApplicationContext()).build();
+            android.util.Log.d("STRING_FROM_JSON", "onCreate: " + builder.getFileString());
+        } catch (Exception exceptions) {
+            exceptions.printStackTrace();
+        }
     }
 }
